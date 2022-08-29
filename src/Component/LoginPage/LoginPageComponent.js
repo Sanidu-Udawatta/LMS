@@ -29,17 +29,23 @@ function SignInCom() {
         <section className="vh-100">
             <div className="container-fluid h-custom">
                 <div className="row d-flex justify-content-center align-items-center h-100">
-                    <div className="col-md-9 col-lg-6 col-xl-5">
-                        <img src={typing}
-                             className="img-fluid" alt="Sample image"/>
-                    </div>
 
+                    <div className="col-md-9 col-lg-6 col-xl-5 ">
+
+                        <div className="d-flex flex-row align-items-center justify-content-center logo-section-res">
+                            <p className="lead fw-normal mb-1 me-3 line-height "><span
+                                className="admin-name-res">SIPHALA</span></p>
+                        </div>
+
+                        <img src={typing}
+                             className="img-fluid main-img-section" alt="Sample image"/>
+                    </div>
 
                     <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 
-                        <div className="d-flex flex-row align-items-center justify-content-center">
-                            <img src={logo} alt="Sphala-Logo" className="logo-img"/>
-                            <p className="lead fw-normal mb-0 me-3 line-height "><span
+                        <div className="d-flex flex-row align-items-center justify-content-center logo-section">
+                            <img src={logo} alt="Sphala-Logo" className="logo-img mb-1"/>
+                            <p className="lead fw-normal mb-1 me-3 line-height "><span
                                 className="admin-name">SIPHALA</span></p>
 
                         </div>
@@ -49,12 +55,12 @@ function SignInCom() {
                             <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
                                 <div className="student">
 
-                                    <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
+                                    <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'} className="selector-btn">
                                         Student
                                     </MDBTabsLink>
                                 </div>
                                 <MDBTabsItem>
-                                    <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'}>
+                                    <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className="selector-btn">
                                         Parent
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -70,7 +76,7 @@ function SignInCom() {
                                     <MDBInput wrapperClass='mb-4' className="input-data" label='Password' id='password' type='password' name="password"/>
 
 
-                                    <MDBBtn className="mb-4 w-100 input-data" >Login</MDBBtn>
+                                    <MDBBtn className="mb-4 w-100 input-data login-btn" >Login</MDBBtn>
 
 
                                 </MDBTabsPane>
@@ -83,7 +89,7 @@ function SignInCom() {
                                     <MDBInput wrapperClass='mb-4' className="input-data" label='password' id='form1' type='password'/>
 
 
-                                    <MDBBtn className="mb-4 w-100 input-data">Login</MDBBtn>
+                                    <MDBBtn className="mb-4 w-100 input-data login-btn ">Login</MDBBtn>
 
                                 </MDBTabsPane>
 

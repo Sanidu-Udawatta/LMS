@@ -1,12 +1,7 @@
-@font-face {
-    font-family: "Roboto";
-    src: local("Roboto");
-}
 .admin-name {
-    font-family: Roboto;
     font-weight: bolder;
     font-size: 35px;
-    color: #184f7c;
+    color: #c9447e;
     margin-left: 40px;
 }
 
@@ -17,22 +12,120 @@
     height: 1px;
     background: #eee;
 }
+
 .h-custom {
     height: calc(100% - 73px);
 }
+
 @media (max-width: 450px) {
     .h-custom {
         height: 100%;
     }
 }
-.student{
+
+.student {
     width: 50% !important;
     text-align: center !important;
 }
-.input-data{
+
+.input-data {
     margin-top: 40px;
     height: 40px !important;
 }
-.logo-img{
+
+.logo-img {
     width: 100px;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    height: 50px !important;
+    background-color: #C9447E !important;
+    border-color: #C9447E !important;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 991px) {
+    .logo-img {
+        display: none;
+    }
+
+    .admin-name {
+        display: none;
+    }
+
+    .admin-name-res {
+        display: block !important;
+    }
+
+}
+
+.admin-name-res {
+    font-weight: bolder;
+    font-size: 35px;
+    color: #c9447e;
+    margin-left: 10px;
+    display: none;
+    margin-top: 30px;
+
+
+}
+
+.logo-img-res {
+    width: 100px;
+}
+
+
+.selector-btn:not(:disabled):not(.disabled).active, .selector-btn:not(:disabled):not(.disabled):active, .show > .selector-btn.dropdown-toggle {
+    background-color: #c9447e;
+    color: white;
+}
+
+/*.login-btn.focus{*/
+/*   box-shadow: none;*/
+/*}*/
+/*.btn.focus, .btn:focus{*/
+/*    box-shadow: none;*/
+/*}*/
+/*.btn.focus:active,.btn:focus:active{*/
+/*    box-shadow: none;*/
+/*}*/
+
+/*.btn:focus {*/
+/*    box-shadow: none;*/
+/*}*/
+
+/*.login-btn.focus, .login-btn:focus {*/
+/*    box-shadow: none;*/
+/*}*/
+
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+box-shadow: none;
+}
+
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn.active, .btn.active:focus, .btn.focus, .btn:active, .btn:active:focus, .btn:focus, .btn:hover {
+    box-shadow: none;
+}
+
+.btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
 }
