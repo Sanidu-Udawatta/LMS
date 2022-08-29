@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto");
+}
+.admin-name {
+    font-family: Roboto;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #184f7c;
+    margin-left: 40px;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.h-custom {
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+.student{
+    width: 50% !important;
+    text-align: center !important;
+}
+.input-data{
+    margin-top: 40px;
+    height: 40px !important;
+}
+.logo-img{
+    width: 100px;
+}
