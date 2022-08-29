@@ -85,25 +85,6 @@
     color: white;
 }
 
-/*.login-btn.focus{*/
-/*   box-shadow: none;*/
-/*}*/
-/*.btn.focus, .btn:focus{*/
-/*    box-shadow: none;*/
-/*}*/
-/*.btn.focus:active,.btn:focus:active{*/
-/*    box-shadow: none;*/
-/*}*/
-
-/*.btn:focus {*/
-/*    box-shadow: none;*/
-/*}*/
-
-/*.login-btn.focus, .login-btn:focus {*/
-/*    box-shadow: none;*/
-/*}*/
-
-
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
 box-shadow: none;
 }
@@ -119,8 +100,6 @@ box-shadow: none;
 .btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: none;
 }
-
-
 
 .btn-primary.focus, .btn-primary:focus {
     box-shadow: none;

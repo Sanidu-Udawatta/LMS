@@ -1,0 +1,50 @@
+.slide-icon{
+    display: none ;
+}
+
+@media screen and (max-width: 991px) {
+    .slide-icon{
+        display: block !important;
+    }
+    .slide-1{
+        display: none;
+    }
+
+}
+.logo-slide-bar{
+    width: 60px;
+}
+.title-name{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.main-body{
+    background-color: #cd6f96;
+}
+.icon-nav-bar{
+    position: absolute;
+    width: 30px;
+    margin-right: 20px;
+
+    align-items: center;
+
+}
+.item {
+    font-size: 18px;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 10px;
+    margin-left: 50px !important;
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #C9447E !important;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    height: 70px;
+}
