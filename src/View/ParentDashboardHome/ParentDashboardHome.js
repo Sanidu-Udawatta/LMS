@@ -1,7 +1,8 @@
 import React from "react";
 import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
-import PHomeComponent from "../../Component/ParentDashboardHome/PHomeComponent";
+import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
 import "./ParentDashBoardHome.css"
+import HomeBody from "../../Component/ParentDashboardHome/HomeBody/HomeBody";
 
 function ParentDashboardHome() {
     return (
@@ -12,7 +13,10 @@ function ParentDashboardHome() {
 
             <div className="heading-bar-div">
                 <PHomeComponent/>
+            </div>
 
+            <div className="body-section shadow   bg-white rounded">
+                <HomeBody/>
             </div>
 
 

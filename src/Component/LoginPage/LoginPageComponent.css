@@ -108,3 +108,6 @@ box-shadow: none;
 .btn.focus, .btn:focus {
     box-shadow: none;
 }
+.selection-btn{
+    border: 1px solid #c9447e !important;
+}

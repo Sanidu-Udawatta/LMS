@@ -55,12 +55,12 @@ function SignInCom() {
                             <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
                                 <div className="student">
 
-                                    <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'} className="selector-btn">
+                                    <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'} className="selector-btn selection-btn">
                                         Student
                                     </MDBTabsLink>
                                 </div>
                                 <MDBTabsItem>
-                                    <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className="selector-btn">
+                                    <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className="selector-btn selection-btn">
                                         Parent
                                     </MDBTabsLink>
                                 </MDBTabsItem>

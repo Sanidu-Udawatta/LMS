@@ -5,3 +5,12 @@
 .heading-bar-div{
     z-index: 1;
 }
+.body-section{
+    margin-left: 330px;
+    width: 80% !important;
+    background-color: #282c34;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 85vh;
+
+}

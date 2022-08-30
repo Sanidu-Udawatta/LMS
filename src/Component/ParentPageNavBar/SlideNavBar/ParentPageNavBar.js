@@ -19,9 +19,9 @@ import account from "../../../Assets/NavBar/account.png"
 function NavBar () {
 
     return (
-<div style={{display: 'flex', height: '100vh', overflow: 'scroll initial'}}>
-            <CDBSidebar textColor="#fff" backgroundColor="#A35877" >
-                <div className="">
+<div style={{display: 'flex', height: '100vh', overflow: 'scroll initial'}} className="">
+            <CDBSidebar textColor="#fff" backgroundColor="#A35877"  className="main-div">
+                <div className=" ">
                 <CDBSidebarHeader className="slide-icon" prefix={<i className="fa fa-bars fa-large slide-icon slide-icon"></i>} >
                     <a href="/parent-dashboard-home" className="text-decoration-none " style={{color: 'inherit'}}>
                         SIPHALA
@@ -42,7 +42,7 @@ function NavBar () {
                         <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                              aria-orientation="vertical">
 
-                            <a className="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            <a className="nav-link active nav-bar-link" id="v-pills-home-tab" data-toggle="pill" href="home"
                                role="tab" aria-controls="v-pills-home" aria-selected="true">
 
                                 <img src={homes} alt="home-icon" className="icon-nav-bar"/>
@@ -54,7 +54,7 @@ function NavBar () {
 
                             </a>
 
-                            <a className="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            <a className="nav-link nav-bar-link" id="v-pills-profile-tab" data-toggle="pill" href="#progress"
                                role="tab" aria-controls="v-pills-profile" aria-selected="false">
                                 <img src={progress} alt="home-icon" className="icon-nav-bar"/>
 
@@ -64,7 +64,7 @@ function NavBar () {
                                 </CDBSidebarMenuItem>
                             </a>
 
-                            <a className="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                            <a className="nav-link nav-bar-link" id="v-pills-messages-tab" data-toggle="pill"
                                href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
                                aria-selected="false">
                                 <img src={notification} alt="home-icon" className="icon-nav-bar"/>
@@ -75,7 +75,7 @@ function NavBar () {
                                 </CDBSidebarMenuItem>
                             </a>
 
-                            <a className="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                            <a className="nav-link nav-bar-link" id="v-pills-settings-tab" data-toggle="pill"
                                href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
                                aria-selected="false">
                                 <img src={account} alt="home-icon" className="icon-nav-bar"/>
@@ -99,11 +99,14 @@ function NavBar () {
                     <CDBSidebarHeader>
                         <div
                         className="time-section" style={{
-                            padding: '20px 5px',
+                            padding:"5px"
                         }}
                     >
                         <Time/>
                     </div>
+                        <div className="log-out-section">
+                            <button type="button" className="btn btn-rounded log-out-btn">Logout</button>
+                        </div>
                     </CDBSidebarHeader>
                 </CDBSidebarFooter>
             </CDBSidebar>
