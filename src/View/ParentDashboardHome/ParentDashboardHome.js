@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
 import "./ParentDashBoardHome.css"
+import HomeTitle from "../../Component/ParentDashboardHome/HedingTitle/HedingTitleHome";
 
 
 function ParentDashboardHome() {
@@ -16,10 +17,13 @@ function ParentDashboardHome() {
             </div>
 
             <div className="body-section shadow   bg-white rounded">
+                <div className="home-title">
+                    <HomeTitle/>
+                </div>
+
+
 
             </div>
-
-
 
 
         </>
