@@ -11,11 +11,12 @@ import Paper from '@mui/material/Paper';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
+        fontSize: 15,
         backgroundColor: "#d9d9d9",
         color: "black",
     },
     [`&.${tableCellClasses.body}`]: {
-        fontSize: 14,
+        fontSize: 15,
     },
 }));
 
