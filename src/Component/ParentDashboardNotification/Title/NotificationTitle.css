@@ -1,7 +1,8 @@
 .title-not {
     width: 100%;
-    text-align: center;
+    margin-left: 20px;
     font-size: 40px;
     font-weight: bold;
+    color: #914667;
 
 }

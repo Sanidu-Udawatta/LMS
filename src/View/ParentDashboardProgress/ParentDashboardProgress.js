@@ -2,6 +2,8 @@ import React from "react";
 import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
 import ProgressBody from "../../Component/ParentDashboardProgress/ProgressBody/ProgressBody";
+import ProgressTitle from "../../Component/ParentDashboardProgress/HeadignTitle/HeadingTitle";
+
 function ParentDashboardProgress() {
     return (
         <>
@@ -14,6 +16,7 @@ function ParentDashboardProgress() {
             </div>
 
             <div className=" body-section shadow   bg-white rounded">
+                <ProgressTitle/>
                 <ProgressBody/>
             </div>
 
