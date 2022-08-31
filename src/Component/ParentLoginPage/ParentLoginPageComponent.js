@@ -1,4 +1,4 @@
-import "./LoginPageComponent.css"
+import "./ParentLoginPageComponent.css"
 import React, {useState} from 'react';
 import typing from "../../Assets/Images/Typing-bro.svg"
 import logo from "../../Assets/logo.png"

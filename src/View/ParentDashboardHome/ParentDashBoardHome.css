@@ -1,12 +1,14 @@
-.nav-bar-div{
+.nav-bar-div {
     z-index: -1;
     height: 0;
 }
-.heading-bar-div{
+
+.heading-bar-div {
     z-index: 1;
     margin-left: 200px;
 }
-.body-section{
+
+.body-section {
     margin-left: 330px;
     width: 80% !important;
     background-color: #282c34;
@@ -15,8 +17,15 @@
     height: 85vh;
 
 }
-.home-title{
+
+.home-title {
     text-align: center;
     padding-top: 40px;
+
+}
+
+.home-animation-div {
+    width: 70%;
+    margin: auto;
 
 }

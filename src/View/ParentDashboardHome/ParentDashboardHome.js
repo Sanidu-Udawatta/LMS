@@ -3,6 +3,7 @@ import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBa
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
 import "./ParentDashBoardHome.css"
 import HomeTitle from "../../Component/ParentDashboardHome/HedingTitle/HedingTitleHome";
+import HomeAnimation from "../../Component/ParentDashboardHome/HomeAnimation/HomeAnimation";
 
 
 function ParentDashboardHome() {
@@ -19,6 +20,11 @@ function ParentDashboardHome() {
             <div className="body-section shadow   bg-white rounded">
                 <div className="home-title">
                     <HomeTitle/>
+                </div>
+
+
+                <div className="home-animation-div">
+                <HomeAnimation/>
                 </div>
 
 

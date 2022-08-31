@@ -1,8 +1,9 @@
 import React from "react";
 import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
-import HomeBody from "../../Component/ParentDashboardProgress/ProgressBody/ProgressBody";
 import AccountTitle from "../../Component/ParentDashboardAccount/HeadingTitle/HeadingTitle";
+import AccountBody from "../../Component/ParentDashboardAccount/AccountBody/AccountBody";
+import "./ParentDashboardAccount.css"
 
 function ParentDashboardAccount() {
     return (
@@ -17,6 +18,10 @@ function ParentDashboardAccount() {
 
             <div className="body-section shadow   bg-white rounded">
                 <AccountTitle/>
+
+                <div className="account-body-main">
+                    <AccountBody/>
+                </div>
 
             </div>
 
