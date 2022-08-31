@@ -46,6 +46,9 @@
     background-color: #C9447E !important;
     border-color: #C9447E !important;
     margin: 0;
+    font-size: 18px !important;
+    font-weight: bold !important;
+
 }
 
 
@@ -110,4 +113,5 @@ box-shadow: none;
 }
 .selection-btn{
     border: 1px solid #c9447e !important;
+    font-size: 18px!important;
 }

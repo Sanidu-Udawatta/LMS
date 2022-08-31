@@ -1,10 +1,9 @@
 import React from "react";
 import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
-import "./ParentDashBoardHome.css"
+import NotificationBody from "../../Component/ParentDashboardNotification/NotificationBody";
 
-
-function ParentDashboardHome() {
+function ParentDashboardNotification() {
     return (
         <>
             <div className="nav-bar-div">
@@ -16,15 +15,12 @@ function ParentDashboardHome() {
             </div>
 
             <div className="body-section shadow   bg-white rounded">
-
+                <NotificationBody/>
             </div>
-
-
-
 
         </>
 
     );
 }
 
-export default ParentDashboardHome;
+export default ParentDashboardNotification;

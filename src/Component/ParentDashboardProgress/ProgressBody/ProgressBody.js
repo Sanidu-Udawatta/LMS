@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./HomeBody.css"
+import "./ProgressBody.css"
 import {
     MDBContainer,
     MDBTabs,
@@ -18,7 +18,7 @@ import EnglishTable from "../EnglishTable/EnglishTable";
 import MathsTable from "../MathsTable/MathsTable";
 import EnvironmentalTable from "../EnvironmentalTable/EnvironmentalTable";
 
-function HomeBody() {
+function ProgressBody() {
     const [justifyActive, setJustifyActive] = useState('tab1');
 
     const handleJustifyClick = (value) => {
@@ -109,4 +109,4 @@ function HomeBody() {
     );
 }
 
-export default HomeBody;
+export default ProgressBody;

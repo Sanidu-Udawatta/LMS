@@ -51,12 +51,15 @@
 .nav-pills .nav-bar-link.active, .nav-pills .show>.nav-bar-link{
     background-color: #C9447E !important;
 }
+
 .nav-bar-link:hover{
     color: white !important;
 }
+
 .nav-pills .nav-bar-link.active, .nav-pills .show>.nav-bar-link {
     height: 70px;
 }
+
 .log-out-btn{
     width: 60%;
     color: white !important;
@@ -68,4 +71,7 @@
 
 .log-out-btn:hover{
     background-color: #C9447E !important;
+}
+.btn-footer{
+    margin-bottom: 20px;
 }

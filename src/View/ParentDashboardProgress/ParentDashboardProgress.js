@@ -1,10 +1,8 @@
 import React from "react";
 import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
-import "./ParentDashBoardHome.css"
-
-
-function ParentDashboardHome() {
+import ProgressBody from "../../Component/ParentDashboardProgress/ProgressBody/ProgressBody";
+function ParentDashboardProgress() {
     return (
         <>
             <div className="nav-bar-div">
@@ -15,16 +13,13 @@ function ParentDashboardHome() {
                 <PHomeComponent/>
             </div>
 
-            <div className="body-section shadow   bg-white rounded">
-
+            <div className=" body-section shadow   bg-white rounded">
+                <ProgressBody/>
             </div>
-
-
-
 
         </>
 
     );
 }
 
-export default ParentDashboardHome;
+export default ParentDashboardProgress;

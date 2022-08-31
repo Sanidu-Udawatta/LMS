@@ -1,10 +1,9 @@
 import React from "react";
 import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
-import "./ParentDashBoardHome.css"
+import HomeBody from "../../Component/ParentDashboardProgress/ProgressBody/ProgressBody";
 
-
-function ParentDashboardHome() {
+function ParentDashboardAccount() {
     return (
         <>
             <div className="nav-bar-div">
@@ -19,12 +18,9 @@ function ParentDashboardHome() {
 
             </div>
 
-
-
-
         </>
 
     );
 }
 
-export default ParentDashboardHome;
+export default ParentDashboardAccount;

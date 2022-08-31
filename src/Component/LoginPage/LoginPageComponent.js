@@ -1,5 +1,5 @@
 import "./LoginPageComponent.css"
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import typing from "../../Assets/Images/Typing-bro.svg"
 import logo from "../../Assets/logo.png"
 import {
@@ -13,10 +13,12 @@ import {
     MDBIcon,
     MDBInput,
     MDBCheckbox
-}from 'mdb-react-ui-kit';
+} from 'mdb-react-ui-kit';
+import {Link} from "react-router-dom";
 
 function SignInCom() {
-    const [justifyActive, setJustifyActive] = useState('tab1');;
+    const [justifyActive, setJustifyActive] = useState('tab1');
+    ;
 
     const handleJustifyClick = (value) => {
         if (value === justifyActive) {
@@ -55,12 +57,17 @@ function SignInCom() {
                             <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
                                 <div className="student">
 
-                                    <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'} className="selector-btn selection-btn">
+                                    <MDBTabsLink onClick={() => handleJustifyClick('tab1')}
+                                                 active={justifyActive === 'tab1'}
+                                                 className="selector-btn selection-btn">
                                         Student
                                     </MDBTabsLink>
                                 </div>
                                 <MDBTabsItem>
-                                    <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className="selector-btn selection-btn">
+
+                                    <MDBTabsLink onClick={() => handleJustifyClick('tab2')}
+                                                 active={justifyActive === 'tab2'}
+                                                 className="selector-btn selection-btn">
                                         Parent
                                     </MDBTabsLink>
                                 </MDBTabsItem>
@@ -71,25 +78,29 @@ function SignInCom() {
                                 <MDBTabsPane show={justifyActive === 'tab1'}>
 
 
+                                    <MDBInput wrapperClass='mb-4' className="input-data" label='Email address'
+                                              id='email' type='email' name="email"/>
+                                    <MDBInput wrapperClass='mb-4' className="input-data" label='Password' id='password'
+                                              type='password' name="password"/>
 
-                                    <MDBInput wrapperClass='mb-4' className="input-data" label='Email address' id='email' type='email' name="email"/>
-                                    <MDBInput wrapperClass='mb-4' className="input-data" label='Password' id='password' type='password' name="password"/>
-
-
-                                    <MDBBtn className="mb-4 w-100 input-data login-btn" >Login</MDBBtn>
-
+                                    <Link to="/parent-dashboard-home">
+                                        <MDBBtn className="mb-4 w-100 input-data login-btn">Login</MDBBtn>
+                                    </Link>
 
                                 </MDBTabsPane>
 
                                 <MDBTabsPane show={justifyActive === 'tab2'}>
 
 
+                                    <MDBInput wrapperClass='mb-4' className="input-data" label='Name' id='form1'
+                                              type='text'/>
+                                    <MDBInput wrapperClass='mb-4' className="input-data" label='password' id='form1'
+                                              type='password'/>
 
-                                    <MDBInput wrapperClass='mb-4' className="input-data" label='Name' id='form1' type='text'/>
-                                    <MDBInput wrapperClass='mb-4' className="input-data" label='password' id='form1' type='password'/>
 
-
-                                    <MDBBtn className="mb-4 w-100 input-data login-btn ">Login</MDBBtn>
+                                    <Link to="/parent-dashboard-home">
+                                        <MDBBtn className="mb-4 w-100 input-data login-btn ">Login</MDBBtn>
+                                    </Link>
 
                                 </MDBTabsPane>
 
