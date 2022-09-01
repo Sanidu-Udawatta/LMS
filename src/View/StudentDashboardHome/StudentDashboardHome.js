@@ -1,8 +1,10 @@
 import React from "react";
+import "./StudentDashboardHome.css"
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
-import HomeTitle from "../../Component/ParentDashboardHome/HedingTitle/HedingTitleHome";
-import HomeAnimation from "../../Component/ParentDashboardHome/HomeAnimation/HomeAnimation";
 import StudentNavBar from "../../Component/StudnetPageNavBar/StudentSlideNavbar/StudentNavBar";
+import StudentHomeTitle from "../../Component/StudentDashboardHome/HedingTitle/StudentHeadingTitleHome";
+import StudentHomeAnimation from "../../Component/StudentDashboardHome/HomeAnimation/StudentHomeAnimation";
+import ActivityButton from "../../Component/StudentDashboardHome/ActivityButton/StudentActivityBotton";
 
 
 function StudentDashboardHome() {
@@ -18,14 +20,16 @@ function StudentDashboardHome() {
 
             <div className="body-section shadow   bg-white rounded">
                 <div className="home-title">
-                    <HomeTitle/>
+                    <StudentHomeTitle/>
                 </div>
 
 
                 <div className="home-animation-div">
-                    <HomeAnimation/>
+                    <StudentHomeAnimation/>
                 </div>
-
+                <div className="do-activity">
+                    <ActivityButton/>
+                </div>
 
 
             </div>
