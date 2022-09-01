@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
 import HomeTitle from "../../Component/ParentDashboardHome/HedingTitle/HedingTitleHome";
 import HomeAnimation from "../../Component/ParentDashboardHome/HomeAnimation/HomeAnimation";

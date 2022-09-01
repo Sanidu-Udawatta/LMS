@@ -1,6 +1,5 @@
 import React from "react";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
-import HomeTitle from "../../Component/ParentDashboardHome/HedingTitle/HedingTitleHome";
 import StudentNavBar from "../../Component/StudnetPageNavBar/StudentSlideNavbar/StudentNavBar";
 import ActivityBody from "../../Component/StudentDashBoardActivity/ActivityButtonBar/ActivityBody";
 

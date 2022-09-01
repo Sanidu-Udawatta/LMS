@@ -45,10 +45,7 @@ function StudentNavBar() {
                         <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                              aria-orientation="vertical">
 
-                            {/*<a className="nav-link active nav-bar-link" id="v-pills-home-tab"*/}
-                            {/*   href="/parent-dashboard-home"*/}
-                            {/*   role="tab" aria-controls="v-pills-home" aria-selected="true">*/}
-                            {/*className="nav-link active nav-bar-link"*/}
+
                             <Link to={"/student-dashboard-home"}
                                   className={
                                       currentPath.includes("student-dashboard-home" )
@@ -64,18 +61,7 @@ function StudentNavBar() {
                                     Home
                                 </CDBSidebarMenuItem>
                             </Link>
-                            {/*</a>*/}
-                            {/*data-toggle="pill"*/}
-                            {/*<a className="nav-link nav-bar-link" id="v-pills-profile-tab" data-toggle="pill"*/}
-                            {/*   href="/home"*/}
-                            {/*   role="tab" aria-controls="v-pills-profile" aria-selected="false">*/}
-                            {/*    <img src={progress} alt="home-icon" className="icon-nav-bar"/>*/}
 
-                            {/*    <CDBSidebarMenuItem className="item">*/}
-
-                            {/*        Progress*/}
-                            {/*    </CDBSidebarMenuItem>*/}
-                            {/*</a>*/}
                             <Link to={"/student-dashboard-activity"} className={
                                 currentPath.includes("student-dashboard-activity" )
                                     ? "nav-link active nav-bar-link"
@@ -90,16 +76,6 @@ function StudentNavBar() {
                                 </CDBSidebarMenuItem>
                             </Link>
 
-                            {/*<a className="nav-link nav-bar-link" id="v-pills-messages-tab" data-toggle="pill"*/}
-                            {/*   href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"*/}
-                            {/*   aria-selected="false">*/}
-                            {/*    <img src={notification} alt="home-icon" className="icon-nav-bar"/>*/}
-
-                            {/*    <CDBSidebarMenuItem className="item">*/}
-
-                            {/*        Notification*/}
-                            {/*    </CDBSidebarMenuItem>*/}
-                            {/*</a>*/}
 
                             <Link to={"/student-dashboard-account"} className={
                                 currentPath.includes("student-dashboard-account" )
@@ -115,25 +91,8 @@ function StudentNavBar() {
                                 </CDBSidebarMenuItem>
                             </Link>
 
-                            {/*<a className="nav-link nav-bar-link" id="v-pills-settings-tab" data-toggle="pill"*/}
-                            {/*   href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"*/}
-                            {/*   aria-selected="false">*/}
-                            {/*    <img src={account} alt="home-icon" className="icon-nav-bar"/>*/}
-
-                            {/*    <CDBSidebarMenuItem className="item">*/}
-
-                            {/*        Account*/}
-                            {/*    </CDBSidebarMenuItem>*/}
-                            {/*</a>*/}
-
-
-
                         </div>
-                        {/*<NavLink exact to="/parent-dashboard-home   " activeClassName="activeClicked" >*/}
-                        {/*    <CDBSidebarMenuItem >*/}
-                        {/*        <Time/>*/}
-                        {/*    </CDBSidebarMenuItem>*/}
-                        {/*</NavLink>*/}
+
                     </CDBSidebarMenu>
                 </CDBSidebarContent>
 

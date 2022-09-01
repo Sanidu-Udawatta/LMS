@@ -47,10 +47,6 @@ function NavBar() {
                         <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                              aria-orientation="vertical">
 
-                            {/*<a className="nav-link active nav-bar-link" id="v-pills-home-tab"*/}
-                            {/*   href="/parent-dashboard-home"*/}
-                            {/*   role="tab" aria-controls="v-pills-home" aria-selected="true">*/}
-                            {/*className="nav-link active nav-bar-link"*/}
                             <Link to={"/parent-dashboard-home"}
                                   className={
                                       currentPath.includes("parent-dashboard-home" )
@@ -66,18 +62,7 @@ function NavBar() {
                                     Home
                                 </CDBSidebarMenuItem>
                             </Link>
-                            {/*</a>*/}
-                            {/*data-toggle="pill"*/}
-                            {/*<a className="nav-link nav-bar-link" id="v-pills-profile-tab" data-toggle="pill"*/}
-                            {/*   href="/home"*/}
-                            {/*   role="tab" aria-controls="v-pills-profile" aria-selected="false">*/}
-                            {/*    <img src={progress} alt="home-icon" className="icon-nav-bar"/>*/}
 
-                            {/*    <CDBSidebarMenuItem className="item">*/}
-
-                            {/*        Progress*/}
-                            {/*    </CDBSidebarMenuItem>*/}
-                            {/*</a>*/}
                             <Link to={"/parent-dashboard-activity"} className={
                                 currentPath.includes("parent-dashboard-activity" )
                                     ? "nav-link active nav-bar-link"
@@ -92,16 +77,7 @@ function NavBar() {
                                 </CDBSidebarMenuItem>
                             </Link>
 
-                            {/*<a className="nav-link nav-bar-link" id="v-pills-messages-tab" data-toggle="pill"*/}
-                            {/*   href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"*/}
-                            {/*   aria-selected="false">*/}
-                            {/*    <img src={notification} alt="home-icon" className="icon-nav-bar"/>*/}
 
-                            {/*    <CDBSidebarMenuItem className="item">*/}
-
-                            {/*        Notification*/}
-                            {/*    </CDBSidebarMenuItem>*/}
-                            {/*</a>*/}
 
                             <Link to={"/parent-dashboard-notification"} className={
                                 currentPath.includes("parent-dashboard-notification" )
@@ -117,16 +93,7 @@ function NavBar() {
                                 </CDBSidebarMenuItem>
                             </Link>
 
-                            {/*<a className="nav-link nav-bar-link" id="v-pills-settings-tab" data-toggle="pill"*/}
-                            {/*   href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"*/}
-                            {/*   aria-selected="false">*/}
-                            {/*    <img src={account} alt="home-icon" className="icon-nav-bar"/>*/}
 
-                            {/*    <CDBSidebarMenuItem className="item">*/}
-
-                            {/*        Account*/}
-                            {/*    </CDBSidebarMenuItem>*/}
-                            {/*</a>*/}
 
                             <Link to={"/parent-dashboard-account"} className={
                                 currentPath.includes("parent-dashboard-account" )
@@ -143,11 +110,7 @@ function NavBar() {
                             </Link>
 
                         </div>
-                        {/*<NavLink exact to="/parent-dashboard-home   " activeClassName="activeClicked" >*/}
-                        {/*    <CDBSidebarMenuItem >*/}
-                        {/*        <Time/>*/}
-                        {/*    </CDBSidebarMenuItem>*/}
-                        {/*</NavLink>*/}
+
                     </CDBSidebarMenu>
                 </CDBSidebarContent>
 
