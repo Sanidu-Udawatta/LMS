@@ -13,11 +13,12 @@
         padding-left: 30px !important;
     }
 }
-.heading-div{
+
+.heading-div {
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-   padding-left: 80px;
+    padding-left: 80px;
 
 }

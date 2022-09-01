@@ -6,7 +6,7 @@
 .heading-bar-div {
     z-index: 1;
     margin-left: 200px;
-    width: 100%;
+    /*width: 100%;*/
 }
 @media screen and (max-width: 991px) {
     .heading-bar-div{
@@ -14,6 +14,7 @@
     }
     .body-section{
         margin-left: 72px !important;
+        width: 90%!important;
     }
 
 }
