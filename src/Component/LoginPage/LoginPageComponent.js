@@ -1,4 +1,4 @@
-import "./ParentLoginPageComponent.css"
+import "./LoginPageComponent.css"
 import React, {useState} from 'react';
 import typing from "../../Assets/Images/Typing-bro.svg"
 import logo from "../../Assets/logo.png"
@@ -83,7 +83,7 @@ function SignInCom() {
                                     <MDBInput wrapperClass='mb-4' className="input-data" label='Password' id='password'
                                               type='password' name="password"/>
 
-                                    <Link to="/parent-dashboard-home">
+                                    <Link to="/student-dashboard-home">
                                         <MDBBtn className="mb-4 w-100 input-data login-btn">Login</MDBBtn>
                                     </Link>
 

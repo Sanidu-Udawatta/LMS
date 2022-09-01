@@ -11,12 +11,11 @@ import {
 } from 'cdbreact';
 import homes from "../../../Assets/NavBar/home.png"
 import notification from "../../../Assets/NavBar/bell.png"
-import account from "../../../Assets/NavBar/account.png"
-import progress from "../../../Assets/NavBar/arrows.png"
+import progress from "../../../Assets/NavBar/diary.png"
 import { Link, useLocation } from "react-router-dom";
 
 
-function NavBar() {
+function StudentNavBar() {
     const location = useLocation();
     const currentPath = location.pathname;
 
@@ -50,9 +49,9 @@ function NavBar() {
                             {/*   href="/parent-dashboard-home"*/}
                             {/*   role="tab" aria-controls="v-pills-home" aria-selected="true">*/}
                             {/*className="nav-link active nav-bar-link"*/}
-                            <Link to={"/"}
+                            <Link to={"/student-dashboard-home"}
                                   className={
-                                      currentPath.includes("" )
+                                      currentPath.includes("student-dashboard-home" )
                                           ? "nav-link active nav-bar-link"
                                           : "nav-link nav-bar-link"
                                   }role="tab"
@@ -77,8 +76,8 @@ function NavBar() {
                             {/*        Progress*/}
                             {/*    </CDBSidebarMenuItem>*/}
                             {/*</a>*/}
-                            <Link to={"/"} className={
-                                currentPath.includes("" )
+                            <Link to={"/student-dashboard-activity"} className={
+                                currentPath.includes("student-dashboard-activity" )
                                     ? "nav-link active nav-bar-link"
                                     : "nav-link nav-bar-link"
                             }role="tab"
@@ -102,8 +101,8 @@ function NavBar() {
                             {/*    </CDBSidebarMenuItem>*/}
                             {/*</a>*/}
 
-                            <Link to={"/"} className={
-                                currentPath.includes("" )
+                            <Link to={"/student-dashboard-account"} className={
+                                currentPath.includes("student-dashboard-account" )
                                     ? "nav-link active nav-bar-link"
                                     : "nav-link nav-bar-link"
                             }role="tab"
@@ -161,4 +160,4 @@ function NavBar() {
     );
 }
 
-export default NavBar;
+export default StudentNavBar;

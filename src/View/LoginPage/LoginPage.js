@@ -1,5 +1,5 @@
 import React from "react";
-import Login from "../../Component/ParentLoginPage/ParentLoginPageComponent";
+import Login from "../../Component/LoginPage/LoginPageComponent";
 
 function LoginPage() {
     return (

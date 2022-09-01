@@ -1,12 +1,13 @@
 import React from "react";
-import NavBar from "../../Component/ParentPageNavBar/SlideNavBar/ParentPageNavBar";
 import PHomeComponent from "../../Component/ParentPageNavBar/HeadingBar/PHomeComponent";
 import HomeTitle from "../../Component/ParentDashboardHome/HedingTitle/HedingTitleHome";
 import HomeAnimation from "../../Component/ParentDashboardHome/HomeAnimation/HomeAnimation";
 import StudentNavBar from "../../Component/StudnetPageNavBar/StudentSlideNavbar/StudentNavBar";
+import AccountTitle from "../../Component/StudentDashboardAccount/AccountTitle/AccountTitle";
+import StudentAccDetails from "../../Component/StudentDashboardAccount/AccountDetails/AccountDetails";
 
 
-function StudentDashboardHome() {
+function StudentDashboardAccount() {
     return (
         <>
             <div className="nav-bar-div">
@@ -18,17 +19,11 @@ function StudentDashboardHome() {
             </div>
 
             <div className="body-section shadow   bg-white rounded">
-                <div className="home-title">
-                    <HomeTitle/>
+                <AccountTitle/>
+
+                <div className="account-body-main">
+                <StudentAccDetails/>
                 </div>
-
-
-                <div className="home-animation-div">
-                    <HomeAnimation/>
-                </div>
-
-
-
             </div>
 
 
@@ -37,4 +32,4 @@ function StudentDashboardHome() {
     );
 }
 
-export default StudentDashboardHome;
+export default StudentDashboardAccount;
