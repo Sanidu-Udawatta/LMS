@@ -151,22 +151,31 @@ function NavBar() {
                     </CDBSidebarMenu>
                 </CDBSidebarContent>
 
+
                 <CDBSidebarFooter style={{textAlign: 'center'}}>
+
                     <div className="btn-footer">
                         <div
                             className="time-section" style={{
                             padding: "5px"
                         }}
-                        >
+                        > <CDBSidebarMenuItem>
+
                             <Time/>
+                        </CDBSidebarMenuItem>
                         </div>
                         
                         <Link to={"/"}>
+
+                            <CDBSidebarMenuItem>
                         <div className="log-out-section">
+
                             <button type="button" className="btn btn-rounded log-out-btn">Logout</button>
                         </div>
+                            </CDBSidebarMenuItem>
                         </Link>
                     </div>
+
                 </CDBSidebarFooter>
             </CDBSidebar>
         </div>

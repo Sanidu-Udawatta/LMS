@@ -8,18 +8,18 @@ import "./ParentDashboardAccount.css"
 function ParentDashboardAccount() {
     return (
         <>
-            <div className="nav-bar-div">
+            <div className="nav-bar-div ">
                 <NavBar/>
             </div>
 
-            <div className="heading-bar-div">
+            <div className="heading-bar-div ">
                 <PHomeComponent/>
             </div>
 
-            <div className="body-section shadow   bg-white rounded">
+            <div className="body-section shadow   bg-white rounded height-set">
                 <AccountTitle/>
 
-                <div className="account-body-main">
+                <div className="account-body-main ">
                     <AccountBody/>
                 </div>
 

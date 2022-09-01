@@ -34,7 +34,7 @@ function AccountBody() {
 
                         <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
 
-                            <Grid container spacing={3}>
+                            <Grid container spacing={3} className="main-grid-account">
                                 <Grid item xs={2} className="tab-btn-item">
                                     <Item>
                                         <MDBTabsItem>
@@ -59,6 +59,32 @@ function AccountBody() {
                                 </Grid>
                             </Grid>
 
+                            {/*Responsive button */}
+                            <Grid container spacing={2} className="responsive-button-set">
+                                <Grid item xs={6} className="tab-btn-item">
+                                    <Item>
+                                        <MDBTabsItem>
+                                            <MDBTabsLink onClick={() => handleJustifyClick('tab1')}
+                                                         active={justifyActive === 'tab1'}
+                                                         className="selector-btn subject-tab shadow rounded account-tab ">
+                                                Student
+                                            </MDBTabsLink>
+                                        </MDBTabsItem>
+                                    </Item>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <Item>
+                                        <MDBTabsItem>
+                                            <MDBTabsLink onClick={() => handleJustifyClick('tab2')}
+                                                         active={justifyActive === 'tab2'}
+                                                         className="selector-btn subject-tab shadow rounded">
+                                                Parent
+                                            </MDBTabsLink>
+                                        </MDBTabsItem>
+                                    </Item>
+                                </Grid>
+                            </Grid>
+                            {/*Responsive button */}
 
                         </MDBTabs>
 

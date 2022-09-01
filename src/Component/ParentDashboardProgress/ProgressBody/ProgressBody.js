@@ -39,7 +39,7 @@ function ProgressBody() {
 
                                     <Grid container spacing={3}>
                                         <Grid item xs={4} className="tab-btn-item">
-                                            <Item>
+                                            <Item className="grid-item">
                                                 <MDBTabsItem>
                                                     <MDBTabsLink onClick={() => handleJustifyClick('tab1')}
                                                                  active={justifyActive === 'tab1'}
@@ -49,8 +49,8 @@ function ProgressBody() {
                                                 </MDBTabsItem>
                                             </Item>
                                         </Grid>
-                                        <Grid item xs={4} >
-                                            <Item>
+                                        <Grid item xs={4} className="tab-btn-item">
+                                            <Item className="grid-item">
                                                 <MDBTabsItem>
                                                     <MDBTabsLink onClick={() => handleJustifyClick('tab2')}
                                                                  active={justifyActive === 'tab2'} className="selector-btn subject-tab shadow rounded">
@@ -60,18 +60,18 @@ function ProgressBody() {
                                             </Item>
                                         </Grid>
 
-                                        <Grid item xs={4} >
-                                            <Item>
+                                        <Grid item xs={4} className="tab-btn-item-hidden">
+                                            <Item className="grid-item">
                                                 <MDBTabsItem>
                                                     <MDBTabsLink onClick={() => handleJustifyClick('tab3')}
                                                                  active={justifyActive === 'tab3'} className="selector-btn subject-tab shadow rounded">
-                                                        Environmental Studies
+                                                        <span className="envi-dis">Environmental Studies</span>
+                                                        <span className="envi-dis-res">E.study</span>
                                                     </MDBTabsLink>
                                                 </MDBTabsItem>
                                             </Item>
                                         </Grid>
                                     </Grid>
-
 
                             </MDBTabs>
 
