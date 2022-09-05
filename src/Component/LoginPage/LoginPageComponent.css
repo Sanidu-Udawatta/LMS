@@ -115,3 +115,16 @@ box-shadow: none;
     border: 1px solid #c9447e !important;
     font-size: 18px!important;
 }
+
+.guest-title{
+    font-size: 18px;
+    color: #C9447E;
+    font-weight: bold;
+
+}
+.center-title{
+    text-align: center;
+}
+.link-deco{
+    text-decoration: none !important;
+}

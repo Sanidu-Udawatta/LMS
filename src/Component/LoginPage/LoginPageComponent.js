@@ -75,7 +75,7 @@ function SignInCom() {
 
                             <MDBTabsContent>
 
-                                <MDBTabsPane show={justifyActive === 'tab1'}>
+                                <MDBTabsPane show={justifyActive === 'tab1'} className='center-title'>
 
 
                                     <MDBInput wrapperClass='mb-4' className="input-data" label='Email address'
@@ -86,10 +86,16 @@ function SignInCom() {
                                     <Link to="/student-dashboard-home">
                                         <MDBBtn className="mb-4 w-100 input-data login-btn">Login</MDBBtn>
                                     </Link>
+                                    <Link to="/" className="link-deco">
 
+                                    <span className="guest-title">
+                                        Continue as guest
+                                    </span>
+
+                                    </Link>
                                 </MDBTabsPane>
 
-                                <MDBTabsPane show={justifyActive === 'tab2'}>
+                                <MDBTabsPane show={justifyActive === 'tab2'} className='center-title'>
 
 
                                     <MDBInput wrapperClass='mb-4' className="input-data" label='Name' id='form1'
@@ -100,6 +106,13 @@ function SignInCom() {
 
                                     <Link to="/parent-dashboard-home">
                                         <MDBBtn className="mb-4 w-100 input-data login-btn ">Login</MDBBtn>
+                                    </Link>
+                                    <Link to="/" className="link-deco">
+
+                                    <span className="guest-title">
+                                        Continue as guest
+                                    </span>
+
                                     </Link>
 
                                 </MDBTabsPane>
