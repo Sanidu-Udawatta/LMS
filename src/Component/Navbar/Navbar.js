@@ -52,7 +52,7 @@ export default function Navbar() {
                         <MDBNavbarItem>
                             <Link to={"/aboutUs"} className="link-ch">
                             <MDBNavbarLink active aria-current='page' className="font-color-ch">
-                                About
+                                Contact Us
                             </MDBNavbarLink>
                             </Link>
                         </MDBNavbarItem>
@@ -71,9 +71,9 @@ export default function Navbar() {
                                 <Button variant="outlined" className="loin-btn-mar btn-color-l">Login</Button>
                             </Link>
 
-                            <Link to={"/sign-up"} className="link-ch">
-                                <Button variant="contained" className="btn-color-c">Sign Up</Button>
-                            </Link>
+                            {/*<Link to={"/sign-up"} className="link-ch">*/}
+                            {/*    <Button variant="contained" className="btn-color-c">Sign Up</Button>*/}
+                            {/*</Link>*/}
                         </div>
                     </MDBNavbarNav>
 

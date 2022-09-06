@@ -13,7 +13,7 @@ function Description() {
                         <div className="col-md-8 col-lg-6 col-xl-4 ">
                             <form>
 
-                                <p className="heading-name">Wlcome To <br/> SIPHALA</p>
+                                <p className="heading-name">Welcome To <br/> SIPHALA</p>
                                 <p className="dis-par">Experience The Best Online Platform To The
                                     Grade 1 Students.</p>
 
