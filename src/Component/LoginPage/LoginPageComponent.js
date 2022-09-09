@@ -107,6 +107,7 @@ function SignInCom() {
                                     <Link to="/parent-dashboard-home">
                                         <MDBBtn className="mb-4 w-100 input-data login-btn ">Login</MDBBtn>
                                     </Link>
+
                                     <Link to="/" className="link-deco">
 
                                     <span className="guest-title">
