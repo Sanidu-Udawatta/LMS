@@ -13,6 +13,7 @@ import {
 } from 'mdb-react-ui-kit';
 import Grid from "@mui/material/Grid";
 import Item from "@mui/material/Grid";
+import ActivityOne from "../ActivityOne/ActivityOne";
 
 function ActivityBody() {
     const [justifyActive, setJustifyActive] = useState('tab1');
@@ -74,10 +75,7 @@ function ActivityBody() {
                         <MDBTabsContent className="body-content">
 
                             <MDBTabsPane show={justifyActive === 'tab1'}>
-
-
-
-
+                                <ActivityOne/>
 
                             </MDBTabsPane>
 

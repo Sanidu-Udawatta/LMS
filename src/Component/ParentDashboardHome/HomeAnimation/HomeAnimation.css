@@ -3,3 +3,7 @@
     text-align: center;
 
 }
+.parent-animation{
+    width: 100% !important;
+    border-radius: 5px;
+}

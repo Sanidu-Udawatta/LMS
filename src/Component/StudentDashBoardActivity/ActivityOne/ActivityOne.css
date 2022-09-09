@@ -1,0 +1,18 @@
+.inout-jira {
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 50px !important;
+    text-align: center;
+    vertical-align: text-bottom;
+    text-justify: auto;
+    padding-bottom: 12px;
+
+}
+.first-puzzle{
+    margin-top: 20px;
+    display: inline-flex;
+}
+.sub-input{
+    margin-top: 35px;
+}
