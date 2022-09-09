@@ -27,9 +27,9 @@ function StudentDashboardHome() {
                 <div className="home-animation-div">
                     <StudentHomeAnimation/>
                 </div>
-                <div className="do-activity">
-                    <ActivityButton/>
-                </div>
+                {/*<div className="do-activity">*/}
+                {/*    /!*<ActivityButton/>*!/*/}
+                {/*</div>*/}
 
 
             </div>

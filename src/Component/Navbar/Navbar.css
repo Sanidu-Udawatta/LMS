@@ -38,3 +38,6 @@
 .link-ch{
     text-decoration: none !important;
 }
+.inline-gride{
+    display: grid;
+}
