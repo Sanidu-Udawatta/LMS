@@ -1,6 +1,7 @@
 import React from 'react';
 import Time from "../../ParentPageNavBar/Time/Time";
 import logo from "../../../Assets/logo.png"
+import "./StudentSlideNavBar.css"
 import {
     CDBSidebar,
     CDBSidebarContent,
@@ -20,8 +21,8 @@ function StudentNavBar() {
     const currentPath = location.pathname;
 
     return (
-        <div style={{display: 'flex', height: '100vh', overflow: 'scroll initial'}} className="">
-            <CDBSidebar textColor="#fff" backgroundColor="#A35877" className="main-div">
+        <div style={{display: 'flex', height: '100vh', overflow: 'scroll initial'}} >
+            <CDBSidebar textColor="#fff" backgroundColor="#A35877" className="main-div st-sli-nav">
                 <div className=" ">
                     <CDBSidebarHeader className="slide-icon"
                                       prefix={<i className="fa fa-bars fa-large slide-icon slide-icon"></i>}>

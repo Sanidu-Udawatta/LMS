@@ -14,6 +14,7 @@ import Home from "./View/Home/HomePage";
 import AdminLogin from "./View/AdminLogin/AdminLogin";
 import SignUp from "./View/SignUp/SignUp";
 import AboutUs from "./View/AboutUs/AboutUs";
+import EnglishActivityTable from "./Component/StudentDashBoardActivity/Activities/English/EnglishActivityTable";
 
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
                     <Route path="/sign-up" element={<SignUp/>}/>
 
                     <Route path="/aboutUs" element={<AboutUs/>}/>
+
+                    <Route path="/englishActivityTable" element={<EnglishActivityTable/>}/>
 
                 </Routes>
             </Router>

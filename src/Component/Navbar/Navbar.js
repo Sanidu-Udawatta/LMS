@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <MDBNavbar expand='lg' light className="bg-color">
-            <MDBContainer fluid>
+            <MDBContainer fluid className='class-fuild'>
                 <Link to={"/"}>
                     <img src={logo} alt="logo" className="nav-bar-logo"/>
                 </Link>

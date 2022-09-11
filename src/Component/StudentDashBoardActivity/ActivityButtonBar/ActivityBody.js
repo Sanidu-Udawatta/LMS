@@ -7,6 +7,10 @@ import EnglishActivityTwo from "../Activities/English/EnglishActivityTwo";
 import MathsActivityOne from "../Activities/Maths/MathsActivityOne";
 import MathsActivityTwo from "../Activities/Maths/MathsActivityTwo";
 import "./ActivityBody.css"
+import EnglishActivityTable from "../Activities/English/EnglishActivityTable";
+import EnvironmentalActivityOne from "../Activities/Environmental/EnvironmentalActivityOne";
+import MathsActivityTable from "../Activities/Maths/MathsActivityTable";
+import EnvironmentalActivityTable from "../Activities/Environmental/EnvironmentalActivityTable";
 
 function ActivityBody() {
     const [justifyActive, setJustifyActive] = useState('tab1');
@@ -19,8 +23,9 @@ function ActivityBody() {
         setJustifyActive(value);
     };
 
-    const [englishActivity, setEnglishActivity] = useState(1);
+    const [englishActivity, setEnglishActivity] = useState(0);
     const [mathsActivity, setMathsActivity] = useState(1);
+    const [environmentalActivity, setEnvironmentalActivity] = useState(2);
 
     const handleEnglishNext = () => {
         setEnglishActivity(2);
@@ -29,6 +34,9 @@ function ActivityBody() {
     const handleMathsNext = () => {
         setMathsActivity(2);
     }
+    // const handleEnvironmentalNext = () => {
+    //     setMathsActivity(3);
+    // }
     return (
         <section>
             <div className="container-fluid h-custom">
@@ -66,7 +74,7 @@ function ActivityBody() {
 
                                         <MDBTabsItem>
                                             <MDBTabsLink
-                                                // onClick={() => handleJustifyClick('tab3')}
+                                                onClick={() => handleJustifyClick('tab3')}
                                                 active={justifyActive === 'tab3'}
                                                 className="selector-btn subject-tab shadow rounded">
                                                 <span className="envi-dis">Environmental Studies</span>
@@ -83,22 +91,15 @@ function ActivityBody() {
                         <MDBTabsContent className="body-content">
 
                             <MDBTabsPane show={justifyActive === 'tab1'}>
-                                {englishActivity === 1 ? <EnglishActivityOne/> : <EnglishActivityTwo/>}
-                                {englishActivity === 1 ? <button onClick={handleEnglishNext}
-                                                                 className="activity-button">Next</button> : null}
+                                <EnglishActivityTable/>
                             </MDBTabsPane>
 
                             <MDBTabsPane show={justifyActive === 'tab2'}>
-                                {mathsActivity === 1 ? <MathsActivityOne/> : <MathsActivityTwo/>}
-                                {mathsActivity === 1 ?
-                                    <button onClick={handleMathsNext}
-                                            className="activity-button maths-activity-next-button next-button">Next</button>
-                                    : null}
+                                <MathsActivityTable/>
                             </MDBTabsPane>
 
                             <MDBTabsPane show={justifyActive === 'tab3'}>
-
-
+                                <EnvironmentalActivityTable/>
                             </MDBTabsPane>
 
                         </MDBTabsContent>

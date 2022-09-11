@@ -1,6 +1,7 @@
 .nav-bar-logo{
     width: 60px;
     margin-right:20px ;
+
 }
 .login-btn-nav-bar{
     position: absolute;
@@ -28,6 +29,7 @@
 }
 .bg-color{
     background-color: #cd6f96 !important;
+
 }
 .font-color-ch{
     color: white !important;
@@ -41,3 +43,4 @@
 .inline-gride{
     display: grid;
 }
+
